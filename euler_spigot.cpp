@@ -3,8 +3,8 @@
 *
 *   Print digits of euler's constant e.
 *
-*   author: Ryan Morehouse
-*   license: MIT
+*   @author Ryan Morehouse
+*   @license MIT
 *
 *******************************/
 
