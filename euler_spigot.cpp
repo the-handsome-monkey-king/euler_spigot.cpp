@@ -29,10 +29,13 @@ int main(int argc, char *argv[]) {
 
   // verify arg n is within limits
   std::istringstream ss(argv[1]);
-  if (!(ss >> n))
+  if (!(ss >> n)) {
     error_msg();
-  else if (n < 1 || n > LIMIT)
+    return 1;
+  } else if (n < 1 || n > LIMIT) {
     error_msg();
+    return 1;
+  }
 
   // initialize processing array
   int a_len = n+2;
